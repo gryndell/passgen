@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+/*
+ * Password generator inspired by an exercise in
+ * Dan Gookin's *Tiny C Projects*
+ */
+
 const char *color_word[] = {
     "Amber", "Black", "Brown", "Crimson", "Green",
     "Indigo", "Lilac", "Magenta", "Orange", "Pink",
