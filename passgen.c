@@ -8,32 +8,30 @@
  */
 
 const char *color_word[] = {
-    "Amber", "Black", "Brown", "Crimson", "Green",
-    "Indigo", "Lilac", "Magenta", "Orange", "Pink",
-    "Purple", "White", "Yellow"
+	"Amber", "Black", "Blue", "Brown", "Crimson", "Green",
+	"Indigo", "Lemon", "Lilac", "Magenta", "Orange", "Pink",
+	"Purple", "Red", "Scarlet", "Violet", "White", "Yellow"
 };
 
 const char *animal_word[] = {
-"Antelope", "Badger", "Bear", "Beaver", "Buffalo",
-"Camel", "Dolphin", "Donkey", "Dove", "Dragonfly",
-"Eagle", "Elephant", "Falcon", "Ferret", "Finch",
-"Giraffe", "Goose", "Gorilla", "Grouse", "Hamster",
-"Heron", "Herring", "Horse", "Hound", "Hyena",
-"Jackal", "Jaguar", "Koala", "Lemur", "Leopard",
-"Llama", "Lobster", "Locust", "Louse", "Magpie",
-"Manatee", "Meerkat", "Moose", "Octopus", "Otter",
-"Oyster", "Panther", "Parrot", "Pelican", "Penguin",
-"Pigeon", "Possum", "Puffin", "Quail", "Rabbit",
-"Raccoon", "Salmon", "Scorpion", "Tiger", "Turtle",
-"Viper", "Zebra"
+	"Aardvark", "Antelope", "Badger", "Bear", "Beaver", "Buffalo",
+	"Camel", "Dolphin", "Donkey", "Dove", "Dragonfly", "Eagle",
+	"Elephant", "Falcon", "Ferret", "Finch", "Giraffe", "Goose",
+	"Gorilla", "Grouse", "Hamster", "Heron", "Herring", "Horse",
+	"Hound", "Hyena", "Jackal", "Jaguar", "Koala", "Lemur", "Leopard",
+	"Llama", "Lobster", "Locust", "Louse", "Magpie", "Manatee",
+	"Meerkat", "Moose", "Octopus", "Otter", "Oyster", "Panther",
+	"Parrot", "Pelican", "Penguin", "Pigeon", "Possum", "Puffin",
+	"Quail", "Rabbit", "Raccoon", "Salmon", "Scorpion", "Snake",
+	"Tiger", "Turtle", "Viper", "Wolf", "Zebra"
 };
 
 const char symbol[] = "!@#$%^&*-+/?";
 
 const char *thing_word[] = {
-"Thing", "Widget", "Doddle", "Bumfuzzle", "Erf", "Titter", "Cleek",
-"Noob", "Skirl", "Dollop", "Popple", "Bunghole", "Ragamuffin",
-"Puggle", "Gibberish", "Dingus", "Hogwash", "Doozy", "Ragout"
+	"Bumfuzzle", "Bunghole", "Cleek", "Dingus", "Doddle", "Dollop",
+	"Doozy", "Erf", "Gibberish", "Hogwash", "Noob", "Popple", "Puggle",
+	"Ragamuffin", "Ragout", "Skirl", "Thing", "Titter", "Widget"
 };
 
 int main()
