@@ -7,42 +7,38 @@
  * Dan Gookin's *Tiny C Projects*
  */
 
-const char *color_word[] = {
+const char *adjectives[] = {
 	"Amber", "Black", "Blue", "Brown", "Crimson", "Green",
 	"Indigo", "Lemon", "Lilac", "Magenta", "Orange", "Pink",
 	"Purple", "Red", "Scarlet", "Violet", "White", "Yellow"
 };
 
-const char *animal_word[] = {
+const char *nouns[] = {
 	"Aardvark", "Antelope", "Badger", "Bear", "Beaver", "Buffalo",
-	"Camel", "Dolphin", "Donkey", "Dove", "Dragonfly", "Eagle",
-	"Elephant", "Falcon", "Ferret", "Finch", "Giraffe", "Goose",
-	"Gorilla", "Grouse", "Hamster", "Heron", "Herring", "Horse",
-	"Hound", "Hyena", "Jackal", "Jaguar", "Koala", "Lemur", "Leopard",
-	"Llama", "Lobster", "Locust", "Louse", "Magpie", "Manatee",
-	"Meerkat", "Moose", "Octopus", "Otter", "Oyster", "Panther",
-	"Parrot", "Pelican", "Penguin", "Pigeon", "Possum", "Puffin",
-	"Quail", "Rabbit", "Raccoon", "Salmon", "Scorpion", "Snake",
-	"Tiger", "Turtle", "Viper", "Wolf", "Zebra"
+	"Bumfuzzle", "Bunghole", "Camel", "Cleek", "Dingus", "Dolphin",
+	"Donkey", "Doddle", "Dollop", "Doozy", "Dove", "Dragonfly", "Eagle",
+	"Elephant", "Falcon", "Ferret", "Finch", "Gibberish", "Giraffe",
+	"Goose", "Gorilla", "Grouse", "Hamster", "Heron", "Herring",
+	"Hogwash", "Horse", "Hound", "Hyena", "Jackal", "Jaguar", "Koala",
+	"Lemur", "Leopard", "Llama", "Lobster", "Locust", "Louse", "Magpie",
+	"Manatee", "Meerkat", "Moose", "Noob", "Octopus", "Otter", "Oyster",
+	"Panther", "Parrot", "Pelican", "Penguin", "Pigeon", "Popple",
+	"Possum", "Puffin", "Puggle", "Quail", "Rabbit", "Raccoon",
+	"Ragamuffin", "Ragout", "Salmon", "Scorpion", "Skirl", "Snake",
+	"Thing", "Tiger", "Titter", "Turtle", "Viper", "Widget", "Wolf",
+	"Zebra"
 };
 
 const char symbol[] = "!@#$%^&*-+/?";
 
-const char *thing_word[] = {
-	"Bumfuzzle", "Bunghole", "Cleek", "Dingus", "Doddle", "Dollop",
-	"Doozy", "Erf", "Gibberish", "Hogwash", "Noob", "Popple", "Puggle",
-	"Ragamuffin", "Ragout", "Skirl", "Thing", "Titter", "Widget"
-};
-
 int main()
 {
-    int random_color, random_animal, random_symbol, random_thing, number;
+    int random_adjective, random_noun, random_symbol, number;
     srand((unsigned) time(NULL));
-    random_color = rand() % (sizeof(color_word) / sizeof(char *));
-    random_animal = rand() % (sizeof(animal_word) / sizeof(char *));
+    random_adjective = rand() % (sizeof(adjectives) / sizeof(char *));
+    random_noun = rand() % (sizeof(nouns) / sizeof(char *));
     number = rand() % 100;
     random_symbol = rand() % (sizeof(symbol) / sizeof(char));
-    random_thing = rand() % (sizeof(thing_word) / sizeof(char *));
-    printf("%s%s%d%c%s\n", color_word[random_color], animal_word[random_animal],
-           number, symbol[random_symbol], thing_word[random_thing]);
+    printf("%s%s%d%c\n", adjectives[random_adjective], nouns[random_noun],
+           number, symbol[random_symbol]);
 }
